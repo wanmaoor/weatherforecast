@@ -1,5 +1,3 @@
-# shak-vue-weatherapp
-https://shakweather.netlify.com/
 
 ## Project setup
 ```
