@@ -20,6 +20,9 @@ export default {
     DayForecastTab
   },
   mounted(){
+  },
+  methods: {
+    
   }
 }
 </script>

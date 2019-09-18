@@ -37,7 +37,7 @@ export default {
   },
   mounted(){
     store.commit('setTabFlag',true)
-    store.dispatch('searchLocation', 'London')
+    store.dispatch('searchLocation', 'chongqing')
   },
   computed:{
     weatherCache:() => store.getters['getWeatherCache'],

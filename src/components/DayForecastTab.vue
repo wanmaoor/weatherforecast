@@ -2,8 +2,8 @@
   <div>
     <v-container class="displaytab">
         <v-tabs fixed-tabs slider-color="blue">
-          <v-tab @click.prevent="setTabCurrent(true)">Current</v-tab>
-          <v-tab @click.prevent="setTabCurrent(false)">7 Day Forecast</v-tab>
+          <v-tab @click.prevent="setTabCurrent(true)">今日天气</v-tab>
+          <v-tab @click.prevent="setTabCurrent(false)">未来七天</v-tab>
         </v-tabs>
     </v-container>
   </div>

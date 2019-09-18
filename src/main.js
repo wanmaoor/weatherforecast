@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import bootstrap from 'bootstrap-vue'
 import Vuetify from 'vuetify'
+import vRegion from 'v-region';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'vuetify/dist/vuetify.min.css'
@@ -13,6 +14,7 @@ Vue.use(bootstrap)
 Vue.use(Vuetify, {
   iconfont: 'md'
 })
+Vue.use(vRegion)
 Vue.config.productionTip = false
 
 new Vue({
