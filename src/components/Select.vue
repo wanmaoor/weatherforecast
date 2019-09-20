@@ -1,37 +1,13 @@
 <template>
-  <div>
-    <v-container>
-      <v-layout>
-        <v-flex xs6 sm6 md6 lg6 offset-lg3 offset-md1>
-          <v-text-field
-            solo
-            label="搜索地点"
-            v-model="searchValue"
-            @keyup.enter.native="searchLocation(searchValue)"
-            append-icon="search"
-            @click:append="searchLocation(searchValue)"
-          ></v-text-field>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </div>
+  <v-region @values="regionChange" :area="false" class="select"></v-region>
 </template>
 
 <script>
-import store from "@/store.js";
-import service from "@/service.js";
 import { map } from "../assets/map.js";
+import store from "@/store.js";
 export default {
-  name: "SearchBar",
-  data() {
-    return {
-      searchValue: null
-    };
-  },
+  name: 'Select',
   methods: {
-    searchLocation(payload) {
-      store.dispatch("searchLocation", payload);
-    },
     regionChange(data) {
       let cityName = data.city.value;
       let provinceName = data.province.value;
@@ -55,11 +31,11 @@ export default {
       }
     }
   }
-};
+}
 </script>
 
-<style scoped lang="scss">
-.searchbar {
-  width: 30%;
-}
+<style>
+  .select{
+    margin-bottom: 50px;
+  }
 </style>
