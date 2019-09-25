@@ -1,34 +1,31 @@
+# README
 
-## Project setup
-```
+## 运行项目
+
+```json
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+### 在本地编译
+
+```json
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
+### 生成
+
+```json
 npm run build
 ```
 
-### Run your tests
-```
+### 测试
+
+```json
 npm run test
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### 单元测试
 
-### Run your unit tests
-```
+```json
 npm run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-"#simple vue weather app" 
